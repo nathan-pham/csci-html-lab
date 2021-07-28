@@ -9,6 +9,14 @@
     <title>CSCI HTML Lab | Nathan Pham</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simply_clean.css/style.css" />
+
+    <style>
+        @media print {
+            .youtube__video {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
     <main>
@@ -168,9 +176,11 @@
                 Embed the YouTube video above (the video; NOT just its URL) into your web page (.htm) between the lines below by using the appropriate HTML code for embedding that is provided by YouTube. <i>(<b>Hint:</b> Look for the Share > Embed to see the actual code to use.)</i>
             </p>
 
-            <hr />
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/tqaD2Z-CfzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <hr />
+            <div class="youtube__video">
+                <hr />
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tqaD2Z-CfzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <hr />
+            </div>
 
             <p>
                 <b>C3.</b>
