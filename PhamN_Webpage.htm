@@ -16,11 +16,21 @@
                 display: none;
             }
         }
+
+        span.easter__egg {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        h1:hover span.easter__egg {
+            transform: rotate(360deg);
+            transition: transform 0.4s ease;
+        }
     </style>
 </head>
 <body>
     <main>
-        <h1>Instructions for Chapter 16 Lab</h1>
+        <h1><span class="easter__egg">😂</span> Instructions for Chapter 16 Lab</h1>
         <p><i><u>Nathan Pham,</u> built with <a href="https://github.com/nathan-pham/simply-clean">simplyclean.css</a> (to improve frontend readability and strip original document of generated tags/styles).</i></p>
 
         <p>For this assignment you will modify this HTML code of this web page; use a search engine to search for websites; analyze existing HTML documents to locate image URLs; insert hyperlinks, images and a video; edit the web page you created; save your completed HTML file as a PDF file and create a compressed (zip) file. <b>Pay Special Attention to the HINTS throughout the document!</b></p>
@@ -110,7 +120,6 @@
                     </td>
                 </tr>
             </table>
-
 
             <p>
                 <b>A7.</b>
