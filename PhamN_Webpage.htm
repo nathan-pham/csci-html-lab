@@ -8,34 +8,136 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😂</text></svg>" />
     <title>CSCI HTML Lab | Nathan Pham</title>
 
-    <style>
-        html, body {
-            height: 100%;
-            width: 100%;
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-
-        *, ::before, ::after {
-            box-sizing: inherit;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simply_clean.css/style.css" />
 </head>
 <body>
-    <div class="colleges__container">
-        <div class="college">
-            <img src="https://www.sierracollege.edu/apple-touch-icon.png" alt="" />
-            <a href="">Folsom Lake College</a>
-        </div>
-        <div class="college">
-            <img src="" alt="" />
-            <a href="">Sierra College</a>
-        </div>
-        <div class="college">
-            <img src="https://accjc.org/wp-content/uploads/ACCJC-white-logo.svg" alt="" />
-            <a href="">Accrediting Commission for Community and Junior Colleges of the Western Association of Schools and Colleges</a>
-        </div>
-    </div>
+    <main>
+        <h1>Instructions for Chapter 16 Lab</h1>
+        <p>Nathan Pham, built with <a href="https://github.com/nathan-pham/simply-clean">simplyclean.css</a> (to improve frontend readability and strip original document of generated tags/styles).</p>
+
+        <p>For this assignment you will modify this HTML code of this web page; use a search engine to search for websites; analyze existing HTML documents to locate image URLs; insert hyperlinks, images and a video; edit the web page you created; save your completed HTML file as a PDF file and create a compressed (zip) file. <b>Pay Special Attention to the HINTS throughout the document!</b></p>
+
+        <p><i>Note: When you have completed this assignment, you will upload the resulting ZIP file to the appropriate assignment location in Canvas.</i></p>
+
+        <section>
+            <h2>Section A. Adding Hypermedia to this document. (10 points)</h2>
+            
+            <p> 
+                <b>A1.</b>
+                Save this HTML document with the filename [your last name and first initial]_ webpage.htm (e.g., HendricksR_webpage.htm) to a location from which you can work from and later put into your zip file, and finally upload to Canvas.
+            </p>
+
+            <p><i>Hint: Once you have saved this HTML document, you will EDIT the HTML code using Only a text editor such as Notepad or Notepad++. I recommend Notepad++ for Windows computers. If you are using a Mac, you can try Brackets, Textmate or Sublime Text. I also recommend using Google Chrome as your browser for this assignment as it is available for both Windows and Apple computers. Use of other browsers may complicate the assignment as I will rely on commands available using the Google Chrome browser.</i></p>
+
+            <p> 
+                <b>A2.</b>
+                Using a networked personal computer (PC) locate the home page for each entity highlighted in bold in the paragraph below (HINT: there are 3 items below in Bold).
+            </p>
+
+            <p>
+                There are a number of quality community colleges serving northern California. The <b>Folsom Lake College</b> (FLC) is located east of Sacramento in Folsom, California. The <b>Sierra College</b> is located north of Sacramento in Rocklin, California. Each of these community colleges are accredited by the <b>Accrediting Commission for Community and Junior Colleges of the Western Association of Schools and Colleges</b>.
+            </p>
+
+            <p> 
+                <b>A3.</b>
+                Use the appropriate HTML code to enable the name of each entity in the paragraph above to function as a hyperlink to each entity’s home page.
+            </p>
+            
+            <p>
+                <b>A4.</b>
+                Each College has a logo. The image files of these logos are located somewhere on each college’s web server. Analyze the HTML source code on each college’s website to find the complete URL for its logo image (There could be more than one image/URL, but it MUST be on that colleges webpage.). Then paste the complete URL for each college’s logo image (not the logo itself; just the URL) into the appropriate cell in Table 1 below.
+            </p>
+
+            <p>
+                <i><b>Hint 1:</b> Verify that the URL starts with http:// or https:// and ends with an image file extension and includes the <b>college’s domain name.</b>
+                </i>
+                <br />
+                <i><b>Hint 2:</b> The correct Sierra College logo can be found by searching Sierra College Logo Branding, the correct Folsom Lake College Logo is located on the college’s home page.</i>
+                <br />
+                <i><b>Hint 3:</b> You can get the College Logo’s URL by “right-clicking” on the logo and choosing “Copy Image Address” using google chrome browser or “Copy link” if using Internet Explorer or Edge.</i>
+            </p>
+        </section>
+ 
+        
+
+        <footer>
+            Nathan Pham 2021
+        </footer>
+<!-- Table 1. URLs for the logo image files of the two listed colleges.
+
+Folsom Lake College logo; a straight horizontal line located above a shallow arch to simulate a bridge
+
+ 
+
+Sierra College logo; The letter S with the lower part of the letter resembling the Sierra Mountains
+
+ 
+
+ 
+
+A5. Now configure the URL for each college’s logo image that you placed in Table 1 to function as a hyperlink to the respective college’s logo image file when the web page is displayed within a browser.
+
+A6. Insert HTML tags into the right column of Table 2 that will display the logo of each of the Colleges in the appropriate row. (Hint: Use the URLs you located in Table 1. Do NOT copy and paste the logo image, as it will look as though it works, until you send it to me, and it will no longer work as those files are actually copied to your computer, instead of pointing to their location on the college website)
+
+Table 2. The logo images of the two Colleges.
+
+This is the logo of Folsom Lake College:
+
+ 
+
+This is the logo of Sierra College:
+
+ 
+
+ 
+
+A7. Now configure the logo image of each college in Table 2 to function as a hyperlink to the respective college’s home page when the web page is displayed within a browser.
+
+A8. Save your web page.
+
+Section B. Troubleshooting the functionality of your web page and PDF files. (5 points)
+
+B1. Open a copy of your web page file in your browser and verify that a) all hyperlinks are working and b) all images are appearing as specified. (Hint: You can use the F5 key in most browsers to refresh your page or Ctrl-F5 to empty your browser’s cache.)
+
+B2. Edit your web page file as necessary to correct any problems using Notepad or Notepad++.
+
+B3. To assist users with visual disabilities you should always create text alternatives to images on web pages. To that end, use the brief description of each of the logo images in the first column of Table 1 (Example: “Folsom Lake College logo; a straight horizontal line located above a shallow arch to simulate a bridge”) and configure the correct description to be displayed by a text-only browser or sounded out by a computerized screen reader when he selects it with the keyboard. (Hint: Use the ALT attribute of the appropriate HTML tag to implement this.)
+
+B4. Save your web page.
+
+B5. After you have verified that all components of your web page are working properly, create a copy of your web page in the Portable Document Format (PDF) in the same location as your web page (HTML) file. Save the PDF file with the same filename as your web page, except for the file extension (.pdf) that indicates the different file format.
+
+B6. Open your PDF file in Adobe Reader and verify that a) all hyperlinks are working and b) all images are appearing as specified. Close the PDF file. Return to your HTML document to correct any problems and be sure to save your corrected web page in both .htm and .pdf formats as applicable
+
+Hint: The easiest way to create a PDF of your webpage: While viewing your webpage in your browser, do a “right-click” and choose “print”. When the printer box opens, change the Desitination (or printer) to “Adobe PDF”. The name may vary for your computer but look for any device that has PDF.
+
+IMPORTANT NOTE: You must create your PDF file of your webpage BEFORE you embed the video. Trying to PDF a webpage with an embedded video can create some unexpected results.
+
+Section C. Embedding a YouTube video into a web page. (3 points)
+
+C1. View the video at http://www.youtube.com/watch?v=tqaD2Z-CfzM .
+
+C2. Embed the YouTube video above (the video; NOT just its URL) into your web page (.htm) between the lines below by using the appropriate HTML code for embedding that is provided by YouTube. (Hint: Look for the Share > Embed to see the actual code to use.)
+
+ 
+
+ 
+
+ 
+
+ 
+
+C3. Save this file again and close the file.
+
+Section D. Submitting your work as a ZIP file (2 points)
+
+D1. Create a ZIP file of your PDF and HTML files you created above with the filename (your last name and first initial)-Ch16_Lab.zip (e.g. HendricksR-CH16_Lab.zip). If your system also created an additional folder with the name that includes “webpage_files” (e.g., HendricksR_webpage_files), then you must select that folder for inclusion in the ZIP file as well.
+
+Hint: The easiest way to ZIP your files on a Windows system is to select the filenames from File Explorer and then “right-click” and choose “Send-to” > “Compressed (zipped) folder”.
+
+ 
+
+D2. Upload your zip file to the appropriate assignment location on Canvas. -->
+    </main>
 </body>
 </html>
