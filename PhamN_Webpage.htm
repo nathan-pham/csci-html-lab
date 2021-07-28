@@ -27,27 +27,11 @@
             transition: transform 0.4s ease;
         }
     </style>
-
-    <script defer>
-        // bruh looking at source code is no good
-        // transpiled with Babel
-
-        document.addEventListener('contextmenu', function (e) {
-            e.preventDefault()
-            return false
-        });
-        document.addEventListener('keydown', function (e) {
-            if (e.keyCode == 123 || e.ctrlKey && (e.keyCode == 'U'.charCodeAt(0) || e.shiftKey && (e.keyCode == 'U'.charCodeAt(0) || e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'J'.charCodeAt(0) || e.keyCode == 'I'.charCodeAt(0)))) {
-                e.preventDefault();
-                return false
-            }
-        });
-    </script>
 </head>
 <body>
     <main>
         <h1><span class="easter__egg">😂</span> Instructions for Chapter 16 Lab</h1>
-        <p></p><u>Nathan Pham,</u> built with <a href="https://github.com/nathan-pham/simply-clean">simplyclean.css</a> (to improve frontend readability and strip original document of generated tags/styles). Also there's an easter egg...</p>
+        <p><u>Nathan Pham,</u> built with <a href="https://github.com/nathan-pham/simply-clean">simplyclean.css</a> and <a href="https://copilot.github.com/">Github Copilot</a> to improve frontend readability and strip original document of auto-generated styles. There's also an easter egg...</p>
 
         <p>For this assignment you will modify this HTML code of this web page; use a search engine to search for websites; analyze existing HTML documents to locate image URLs; insert hyperlinks, images and a video; edit the web page you created; save your completed HTML file as a PDF file and create a compressed (zip) file. <b>Pay Special Attention to the HINTS throughout the document!</b></p>
 
@@ -235,5 +219,35 @@
             Nathan Pham 2021
         </footer>
     </main>
+
+    <script>
+        // transpiled with Babel to work on old versions of IE
+        // blocks source code
+        
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault()
+            return false
+        });
+        
+        document.addEventListener('keydown', function (e) {
+            if (e.keyCode == 123 || e.ctrlKey && (e.keyCode == 'U'.charCodeAt(0) || e.shiftKey && (e.keyCode == 'U'.charCodeAt(0) || e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'J'.charCodeAt(0) || e.keyCode == 'I'.charCodeAt(0)))) {
+                e.preventDefault();
+                return false
+            }
+        });
+    </script>
+
+    <script>
+        // strikethrough text onclick
+
+        const paragraphs = [...document.querySelectorAll('p')]
+        paragraphs.forEach(p => {
+            p.addEventListener('click', (e) => {
+                if(e.target.tagName === "P") {
+                    p.style.textDecoration = p.style.textDecoration === 'line-through' ? '' : 'line-through';
+                }
+            })
+        })
+    </script>
 </body>
 </html>
